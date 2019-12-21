@@ -21,6 +21,7 @@ class Vehiculos():
     def estado(self):
         print("Marca: ",self.marca,"\nModelo: ",self.modelo,"\n¿En marcha?: ",self.enmarcha,"\n¿Acelerando?:",self.acelera,"\n¿Frenando?:",self.frena)
 
+# creamos la subclase 'Moto' a partir de la superclase 'Vehiculos'
 class Moto(Vehiculos):
     pass
 
