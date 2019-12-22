@@ -14,4 +14,4 @@ if input("\n¿Te gustaría calcular la tabla de multiplicar de números más all
                 print("-------------")
                 for op2 in range (1,10+1):
                         print(f"{op1} x {op2} = {op1*op2}")
-        print("-------------");
+        print("-------------")
