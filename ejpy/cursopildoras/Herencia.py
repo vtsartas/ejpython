@@ -23,16 +23,20 @@ class Vehiculos():
         self.enmarcha,"\n¿Acelerando?:",self.acelera,"\n¿Frenando?:",self.frena)
 
 # creamos una clase 'VElectricos'
-class VElectricos():
-    def __init__(self):
+class VElectricos(Vehiculos):
+    def __init__(self,marca,modelo):
+        super().__init__(marca,modelo)
         self.autonomia=100
 
     def cargarEnergia(self): 
         self.cargando=True
 
 # la subclase biciElectrica hereda de dos superclases
-class biciElectrica(Vehiculos,VElectricos):
-    pass
+class biciElectrica(VElectricos):
+    def estado(self):
+        super().estado()
+        print("Autonomía:",self.autonomia)
+
 
 # creamos una clase 'Furgoneta' heredera de la clase 'Vehiculo'
 class Furgoneta(Vehiculos):
