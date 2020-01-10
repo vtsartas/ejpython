@@ -4,6 +4,10 @@ from ejs.ejercicio3 import *
 from ejs.ejercicio4 import *
 from ejs.ejercicio5 import *
 from ejs.ejercicio6 import *
+from ejs.ejercicio7 import *
+from ejs.ejercicio8 import *
+from ejs.ejercicio9 import *
+from ejs.ejercicio10 import *
 
 # necesario para la salida del programa
 import sys
@@ -21,6 +25,10 @@ sw = {
        4: ejercicio4,
        5: ejercicio5,
        6: ejercicio6,
+       7: ejercicio7,
+       8: ejercicio8,
+       9: ejercicio9,
+       10: ejercicio10,
        0: salir
     }
 

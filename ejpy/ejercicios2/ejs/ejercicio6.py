@@ -27,11 +27,23 @@ def ejercicio6():
             comodin=num1
             num1=num2
             num2=comodin
-
-        for i in range(num1,num2,1):
-            print(f"{i}")
-            if (i<num2):
-                print(",")
+        
+        print("¿En qué orden quieres mostrar los números?")
+        print("1. De menor a mayor.")
+        print("2. De mayor a menor.")
+        orden=int(input())
+        while (orden!=1 and orden!=2):
+            orden=int(input("ERROR: vuelve a introducir 1 o 2 según el orden preferido"))
+        if (orden==1):
+            for i in range(num1,num2+1,1):
+                print(f"{i}", end='')
+                if (i<num2):
+                    print(", ", end='')
+        else:
+            for i in range(num2,num1-1,-1):
+                print(f"{i}", end='')
+                if (i>num1):
+                    print(", ", end='')
 
         # preguntamos si queremos mostrar otra serie
         otro6=str(input("\n¿Deseas ver los números entre otros dos enteros (s/n)? "))
